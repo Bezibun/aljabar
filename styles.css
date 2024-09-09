@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #e0f7fa;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #00796b;
+}
+
+header p {
+    font-size: 16px;
+    color: #004d40;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+main p, main ul {
+    font-size: 18px;
+    color: #004d40;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #004d40;
+}
+
+/* Background colors for each section */
+#intro {
+    background-color: #e1f5fe;
+}
+
+#components {
+    background-color: #e8f5e9;
+}
+
+#examples {
+    background-color: #fffde7;
+}
+
+/* Tambahkan ini ke bagian atas styles.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gaya yang sudah ada di styles.css tetap sama seperti sebelumnya */
+
